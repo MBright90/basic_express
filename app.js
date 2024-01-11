@@ -14,7 +14,9 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
-console.log('App is listening...');
+app.get('/', (req, res) => {
+    res.render('index', { title: 'Home' });
+});
 
 // router
 
