@@ -1,0 +1,24 @@
+{
+  "name": "basic_express",
+  "version": "1.0.0",
+  "description": "An app to practice setting up an express, EJS website.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBright90/basic_express.git"
+  },
+  "author": "MBright90",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MBright90/basic_express/issues"
+  },
+  "homepage": "https://github.com/MBright90/basic_express#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "node": "^21.2.0"
+  }
+}
