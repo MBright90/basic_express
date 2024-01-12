@@ -1,6 +1,7 @@
 const path = require('path');
 
 const express = require('express');
+const homeRoutes = require('./routes/homeRoutes');
 
 const PORT = 3000;
 const app = express();
@@ -14,10 +15,10 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.render('index', { title: 'Home' });
-});
-
 // router
+app.use(homeRoutes);
 
 // 404 route
+app.use((req, res) => {
+    res.status(404).render('404', { title: '404' });
+});
