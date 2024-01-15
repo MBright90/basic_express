@@ -1,10 +1,11 @@
 body {
 	display: flex;
 	flex-direction: column;
+	min-height: 100vh;
 	width: min(100%, 2000px);
 }
 
-/* nav styles */
+/* ---------- nav styles ---------- */
 
 nav {
 	/* border-bottom: 2px solid #3a3a3a; */
@@ -25,4 +26,14 @@ nav > ul {
 	gap: 25px;
 	font-family: 'Poppins', sans-serif;
 	margin-left: auto;
+}
+
+/* ---------- footer styles ---------- */
+
+footer {
+	font-family: 'Poppins', sans-serif;
+	margin-top: auto;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
 }
