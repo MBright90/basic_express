@@ -72,6 +72,7 @@ nav > ul {
 	font-family: 'Anton', sans-serif;
 	font-size: 48px;
 	margin-right: auto;
+	text-shadow: 3px 3px #ffff00;
 }
 
 /* ---------- footer styles ---------- */
@@ -91,7 +92,6 @@ footer {
 	font-size: 128px;
 	margin-right: 0;
 	text-shadow: 5px 5px #ffff00;
-	/* transform: translate(-5px -5px); */
 }
 
 .content-404 > a {
