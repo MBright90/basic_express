@@ -90,6 +90,33 @@ nav > ul {
 	padding-top: 20px;
 }
 
+/* ---------- contact styles ---------- */
+
+form, .contact-input {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+form {
+	width: 90%;
+}
+
+form > .contact-input {
+	width: 100%;
+}
+
+form > button[type="submit"] {
+	background-color: transparent;
+	border: none;
+	color: #3a3a3a;
+	cursor: pointer;
+	font-family: 'Anton', sans-serif;
+	font-size: 32px;
+	margin: 10px 0 0 auto;
+	width: fit-content;
+}
+
 /* ---------- footer styles ---------- */
 
 footer {
