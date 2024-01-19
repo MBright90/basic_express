@@ -107,8 +107,24 @@ form > .contact-input {
 	width: 100%;
 }
 
+form > .contact-input > input,
 form > .contact-input > textarea {
+	border: 1px solid #3a3a3a;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	letter-spacing: 1.3px;
+	padding: 3px;
 	resize: none;
+}
+
+form > .contact-input > textarea {
+	height: 300px;
+}
+
+form > .contact-input > input:focus,
+form > .contact-input > textarea:focus { 
+	box-shadow: 3px 3px #ffff00;
+	outline: none;
 }
 
 form > button[type="submit"] {
@@ -118,6 +134,7 @@ form > button[type="submit"] {
 	cursor: pointer;
 	font-family: 'Anton', sans-serif;
 	font-size: 32px;
+	letter-spacing: 1.5px;
 	margin: 10px 0 0 auto;
 	width: fit-content;
 }
