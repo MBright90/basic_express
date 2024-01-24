@@ -14,8 +14,8 @@
             </div>
 
             <div class="contact-input">
-                <label for="email">Message</label>
-                <textarea type="text" id="email" name="email"></textarea>
+                <label for="message">Message</label>
+                <textarea type="text" id="message" name="message"></textarea>
             </div>
 
             <button type="submit">SEND</button>
@@ -23,5 +23,16 @@
     </div>
 
     <%- include('./partials/footer'); %>
+
+    <script>
+        const messageEl = document.querySelector("#message");
+
+        const formSubmitBtn = document.querySelector("button[type='submit']");
+        formSubmitBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+            console.log(`${message.value}`)
+        });
+    </script>
+
 </body>
 </html>
