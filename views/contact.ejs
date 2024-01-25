@@ -25,12 +25,20 @@
     <%- include('./partials/footer'); %>
 
     <script>
-        const messageEl = document.querySelector("#message");
+        const emailInput = document.querySelector('#email');
+        const messageInput = document.querySelector("#message");
+
+        const clearInputs = () => {
+            emailInput.value = '';
+            messageInput.value = '';
+        }
 
         const formSubmitBtn = document.querySelector("button[type='submit']");
         formSubmitBtn.addEventListener("click", (event) => {
             event.preventDefault();
-            console.log(`${message.value}`)
+            console.log(`Email: ${email.value}`);
+            console.log(`Message: ${message.value}`);
+            clearInputs();
         });
     </script>
 
